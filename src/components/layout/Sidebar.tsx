@@ -106,4 +106,3 @@ export default function Sidebar() {
     </aside>
   );
 }
-import { motion } from 'framer-motion';

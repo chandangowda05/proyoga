@@ -8,7 +8,6 @@ import {
   Mail, 
   Target, 
   Activity, 
-  ChevronRight, 
   ShieldAlert,
   ArrowRight
 } from 'lucide-react';

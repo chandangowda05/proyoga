@@ -12,9 +12,9 @@ import { auth } from '../lib/firebase';
 interface AuthContextType {
   currentUser: User | null;
   loading: boolean;
-  login: typeof signInWithEmailAndPassword;
-  signup: typeof createUserWithEmailAndPassword;
-  logout: typeof firebaseSignOut;
+  login: (email: string, pass: string) => Promise<any>;
+  signup: (email: string, pass: string) => Promise<any>;
+  logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -48,8 +48,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     <AuthContext.Provider value={{ 
       currentUser, 
       loading,
-      login: login as any,
-      signup: signup as any,
+      login,
+      signup,
       logout
     }}>
       {!loading && children}

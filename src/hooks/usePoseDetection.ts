@@ -8,7 +8,7 @@ if (typeof window !== 'undefined') {
 
 // MediaPipe is loaded via CDN in index.html
 const getPose = () => (window as any).Pose;
-const getDrawingUtils = () => (window as any);
+// const getDrawingUtils = () => (window as any);
 
 // Re-map common drawing functions
 const getDrawConnectors = () => (window as any).drawConnectors;
@@ -35,7 +35,7 @@ export function usePoseDetection() {
   const [confidence, setConfidence] = useState(0);
 
   useEffect(() => {
-    let pose: Pose;
+    let pose: any;
 
     async function init() {
       try {

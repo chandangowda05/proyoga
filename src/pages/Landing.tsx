@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Activity, ArrowRight, CheckCircle2, Shield, Heart, Wind, ChevronRight } from 'lucide-react';
-import ThreeHero from '../components/ui/ThreeHero';
+import { Activity, ArrowRight, CheckCircle2, Shield, Heart, Wind } from 'lucide-react';
 
 export default function Landing() {
   return (

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { auth } from '../lib/firebase';
 import { updateProfile, signOut } from 'firebase/auth';
 import { motion } from 'framer-motion';
-import { LogOut, Settings, Edit2, User, Mail, Shield } from 'lucide-react';
+import { LogOut, Settings, Edit2, Shield } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 export default function Profile() {

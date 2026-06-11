@@ -1,4 +1,4 @@
-import { Bell, Menu, Cpu, Video, Search } from 'lucide-react';
+import { Bell, Menu, Search } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { useAuth } from '../../context/AuthContext';
 

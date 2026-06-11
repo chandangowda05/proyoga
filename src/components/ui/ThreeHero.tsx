@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Float, MeshDistortMaterial, MeshWobbleMaterial, Torus } from '@react-three/drei';
+import { Float, MeshDistortMaterial, Torus } from '@react-three/drei';
 import * as THREE from 'three';
 
 function ZenShape() {
@@ -35,7 +35,7 @@ function ZenShape() {
 function DecorDots() {
   const points = useRef<THREE.Group>(null);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (points.current) {
       points.current.rotation.y += 0.001;
     }
